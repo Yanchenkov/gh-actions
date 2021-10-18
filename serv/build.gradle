@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+jar {
+    archiveBaseName = 'main'
+    archiveVersion =  '0.1.0'
+    manifest {
+      attributes(
+        'Main-Class': 'hello.HelloWorld'
+      )
+    }
+}
