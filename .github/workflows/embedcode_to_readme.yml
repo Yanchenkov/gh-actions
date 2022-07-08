@@ -1,0 +1,13 @@
+name: Embed code in README
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - embedcode_in_readme
+
+jobs:
+  embed-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
